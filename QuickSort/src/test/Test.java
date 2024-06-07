@@ -21,18 +21,18 @@ public class Test {
 		int[] arrayConcurrente = Arrays.copyOf(arraySecuencial, tamañoArray);
 
 		// QUICKSORT SECUENCIAL
-		tiempoInicial = System.currentTimeMillis();																	// Se toma el tiempo cuando inicia
-		QuickSort.quickSort(arraySecuencial, 0, arraySecuencial.length - 1);										// Se ordena el array
-		tiempoFinal = System.currentTimeMillis();																	// Se toma el tiempo cuando finaliza
+		tiempoInicial = System.currentTimeMillis();									// Se toma el tiempo cuando inicia
+		QuickSort.quickSort(arraySecuencial, 0, arraySecuencial.length - 1);						// Se ordena el array
+		tiempoFinal = System.currentTimeMillis();									// Se toma el tiempo cuando finaliza
 		System.out.println("\nQuickSort Secuencial -> Demoró: " + (tiempoFinal - tiempoInicial) + " milisegundos");	// Print para conocer cuanto tardo
 		
 		// Si se quiere comprobar que el array este ordenado:
 		// Array.mostrarArray(arraySecuencial);
 
 		// QUICKSORT CONCURRENTE
-		tiempoInicial = System.currentTimeMillis();																		// Se toma el tiempo cuando inicia
-		ParallelQuickSort.parallelQuickSort(arrayConcurrente, 0, arrayConcurrente.length - 1);							// Se ordena el array
-		tiempoFinal = System.currentTimeMillis();																		// Se toma el tiempo cuando finaliza
+		tiempoInicial = System.currentTimeMillis();									// Se toma el tiempo cuando inicia
+		ParallelQuickSort.parallelQuickSort(arrayConcurrente, 0, arrayConcurrente.length - 1);				// Se ordena el array
+		tiempoFinal = System.currentTimeMillis();									// Se toma el tiempo cuando finaliza
 		System.out.println("\nQuickSort Concurrente -> Demoró: " + (tiempoFinal - tiempoInicial) + " milisegundos");	// Print para conocer cuanto tardo
 		
 		// Si se quiere comprobar que el array este ordenado:
