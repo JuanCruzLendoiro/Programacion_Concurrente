@@ -12,7 +12,7 @@ public class Test {
 		// TODO Auto-generated method stub
 
 		// Variables utiles
-		final int tamañoArray = 300000000;
+		final int tamañoArray = 400000000;
 		long tiempoInicial;
 		long tiempoFinal;
 
